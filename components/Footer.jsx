@@ -59,15 +59,15 @@ const Footer = () => {
           <div className="flex w-auto h-auto flex-col gap-2">
             <h2 className="text-primary trochut text-xl font-bold">Contact</h2>
             <ul className="w-auto h-auto flex flex-col gap-1">
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-               <PiPhoneLight size={20} className="text-primary" />  (123) 456-7890
+              <li className="flex gap-1 sunflower items-center text-secondary text-base font-light">
+               <PiPhoneLight size={15} className="text-primary" />  (123) 456-7890
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <AiOutlineMail size={20} className="text-primary" /> info@havenplanner.com
+              <li className="flex gap-1 sunflower items-center text-secondary text-base font-light">
+                <AiOutlineMail size={15} className="text-primary" /> info@havenplanner.com
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
+              <li className="flex gap-1 sunflower items-center text-secondary text-base font-light">
                 {" "}
-               <CiLocationOn size={20} className="text-primary" /> 2464 Royal Ln. Mesa, New Jersey 45463
+               <CiLocationOn size={15} className="text-primary" /> 2464 Royal Ln. Mesa, New Jersey 45463
               </li>
             </ul>
           </div>
