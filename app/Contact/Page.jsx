@@ -1,5 +1,7 @@
 import Heading from "@/components/Heading";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import React from "react";
 
 const ContactPage = () => {
@@ -14,9 +16,32 @@ const ContactPage = () => {
           </p>
         </div>
         <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
-         <div className="w-[60%] h-auto flex flex-wrap gap-16 justify-center items-center">
-          
-         </div>
+          <div className="w-[50%] h-auto flex flex-wrap gap-16 justify-center items-center">
+            <div className="grid w-full xl:w-[200px] items-center gap-1.5 sunflower">
+              <Label htmlFor="email">Email</Label>
+              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid w-full xl:w-[200px] items-center gap-1.5 sunflower">
+              <Label htmlFor="email">Email</Label>
+              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid w-full xl:w-[200px] items-center gap-1.5 sunflower">
+              <Label htmlFor="email">Email</Label>
+              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid w-full xl:w-[200px] items-center gap-1.5 sunflower">
+              <Label htmlFor="email">Email</Label>
+              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid w-full xl:w-[200px] items-center gap-1.5 sunflower">
+              <Label htmlFor="email">Email</Label>
+              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid w-full xl:w-[200px] items-center  sunflower">
+             <Button className="shadow drop-shadow-xs">Let's Start Planning</Button>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
