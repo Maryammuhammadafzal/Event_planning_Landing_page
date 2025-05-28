@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import PlanningCard from "@/components/PlanningCard";
 const HeroPage = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <div className="w-full h-screen flex justify-center items-center overflow-x-hidden">
       <div
         className="relative w-full h-screen bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${HeroImage.src})` }}
@@ -12,7 +12,7 @@ const HeroPage = () => {
         <div className="header absolute  top-12 left-0 w-full h-[80px] flex justify-center items-center">
                 <Header/>
         </div>
-        <div className="absolute w-full h-auto -bottom-20 right-20 flex justify-end items-center">
+        <div className="absolute w-full h-[400px] -bottom-20 right-20 flex justify-end items-center">
                 <PlanningCard/>
         </div>
       </div>

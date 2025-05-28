@@ -132,6 +132,9 @@
 .sunflower {
   font-family: var(--font-sunflower);
 }
+.card-bg {
+  background-color: #D89F5D;
+}
 body{
   font-family: "Trochut", sans-serif;
   background-color: white;
