@@ -150,13 +150,13 @@ body{
 
 @theme {
   --breakpoint-xs: 30rem;
-  --animate-marquee: marquee 12s linear infinite;
+  --animate-marquee: marquee 3s linear infinite;
   @keyframes marquee {
     0% {
-      transform: translateX(0%);
+      transform: translateX(1%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-0%);
     }
   }
 }

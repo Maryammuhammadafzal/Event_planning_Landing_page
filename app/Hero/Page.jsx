@@ -5,7 +5,7 @@ import PlanningCard from "@/components/PlanningCard";
 import Marquee from "@/components/Marquee";
 const HeroPage = () => {
   return (
-    <div className="w-full h-screen flex flex-col gap-7 justify-center items-center overflow-x-hidden md:mb-16 sm:mb-12 mb-6">
+    <div className="w-full h-screen flex flex-col gap-7 justify-center items-center overflow-hidden md:mb-16 sm:mb-12 mb-6">
       <div
         className="relative w-full h-screen bg-left-top sm:bg-left-bottom md:bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${HeroImage.src})` }}

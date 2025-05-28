@@ -28,7 +28,7 @@ const FeaturesPage = () => {
     },
   ];
   return (
-    <div className="w-full h-auto my-38">
+    <div className="w-full h-auto my-38 overflow-hidden">
       <div className="w-full h-auto flex justify-center items-center gap-12 flex-col">
         <div className=" h-auto flex flex-col gap-4 w-[36%] justify-center items-center">
           <Heading text="Features Highlight" />
@@ -38,20 +38,23 @@ const FeaturesPage = () => {
           </p>
         </div>
         <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
-          <div className="slide-card w-full h-auto flex justify-center items-center">
-            <div
-              className="card relative w-[365px] h-[240px] bg-cover bg-no-repeat bg-center text-white flex items-end"
-              style={{ backgroundImage: `url(${cardImage1.src})` }}
-            >
-              <div className="overlay bg-black/30 w-[365px] h-[240px] absolute top-0 left-0 "></div>
-              <div className="content flex absolute bottom-0 left-0 z-10 justify-center items-center w-full h-[50px] ">
-                <p className="text-lg font-medium sunflower flex gap-3">
-                  Personalized Event Planning <GoArrowUpRight size={20} />
-                </p>
-              </div>
-            </div>
+          <div className="slide-card w-full h-auto flex justify-center items-center animate-marquee whitespace-nowrap  overflow-hidden">
+            {
+              features_data.map(({ feature_image, feature_name } ,index) => (
+                <div key={index}
+                  className="card relative w-[380px] h-[240px] bg-cover bg-no-repeat bg-center text-white flex items-end"
+                  style={{ backgroundImage: `url(${feature_image.src})` }}
+                >
+                  <div className="overlay bg-black/30 w-[380px] h-[240px] absolute top-0 left-0 "></div>
+                  <div className="content flex absolute bottom-0 left-0 z-10 justify-center items-center w-full h-[50px] ">
+                    <p className="text-lg font-medium sunflower flex gap-3">
+                      {feature_name} <GoArrowUpRight size={20} />
+                    </p>
+                  </div>
+                </div>
+              ))}
           </div>
-          <div className="w-[40%] h-auto flex justify-center items-center">
+          <div className="w-[30%] h-auto flex justify-center items-center">
             <Progress value={20} />
           </div>
         </div>
