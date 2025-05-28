@@ -30,9 +30,9 @@ const FeaturesPage = () => {
   return (
     <div className="w-full h-auto my-38 overflow-hidden">
       <div className="w-full h-auto flex justify-center items-center gap-12 flex-col">
-        <div className=" h-auto flex flex-col gap-4 w-[36%] justify-center items-center">
+        <div className=" h-auto flex flex-col gap-4 lg:w-[36%] md:w-[50%] sm:w-[70%] w-full sm:px-0 px-3 justify-center items-center">
           <Heading text="Features Highlight" />
-          <p className="sunflower text-base font-light text-center text-secondary">
+          <p className="sunflower text-xs xs:text-sm sm:text-base font-light text-center text-secondary">
             A captivating slideshow showcasing elegant weddings, corporate
             events, and vibrant parties.
           </p>
@@ -54,7 +54,7 @@ const FeaturesPage = () => {
                 </div>
               ))}
           </div>
-          <div className="w-[30%] h-auto flex justify-center items-center">
+          <div className="md:w-[30%] sm:w-[50%] w-[70%] h-auto flex justify-center items-center">
             <Progress value={20} />
           </div>
         </div>
