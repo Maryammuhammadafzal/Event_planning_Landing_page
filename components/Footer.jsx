@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="w-full h-auto flex justify-center items-center">
       <div className="xl:w-[60%] flex flex-col justify-center items-center gap-6 w-full lg:w-[80%] md:w-full md:px-0 px-3">
-        <footer className="w-full flex justify-center items-center h-auto gap-12">
+        <footer className="w-full flex h-auto gap-40">
           <div className="w-auto h-auto flex flex-col gap-4">
             <div className="logo w-auto h-auto">
               <Image
@@ -21,50 +21,53 @@ const Footer = () => {
                 className="max-w-[100px] md:min-w-[130px]"
               />
             </div>
-            <div className="icons flex gap-2">
-              
+            <div className="icons flex gap-2 text-primary">
+              <BiLogoInstagram size={30}/>
+              <RiWhatsappLine size={30}/>
+              <CiFacebook size={30}/>
+              <RiLinkedinLine size={30}/>
             </div>
           </div>
           <div className="w-auto h-auto flex flex-col gap-2">
             <h2 className="text-primary trochut text-xl font-bold">
-              quick links
+              Quick links
             </h2>
             <ul className="w-auto h-auto flex flex-col gap-1">
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span> Home
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span> Home
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span> About
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span> About
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span>{" "}
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span>{" "}
                 Services
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span>{" "}
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span>{" "}
                 Portfolio
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span> Blog
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span> Blog
               </li>
-              <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <span className="w-2 h-2 rounded-full bg-primary"></span>{" "}
+              <li className="flex gap-2 sunflower items-center text-secondary text-base font-light">
+                <span className="w-1 h-1 rounded-full bg-primary"></span>{" "}
                 Contact
               </li>
             </ul>
           </div>
-          <div className="flex w-auto h-auto flex-col">
+          <div className="flex w-auto h-auto flex-col gap-2">
             <h2 className="text-primary trochut text-xl font-bold">Contact</h2>
             <ul className="w-auto h-auto flex flex-col gap-1">
               <li className="flex gap-1 sunflower text-secondary text-base font-light">
-               <PiPhoneLight size={20}/>  (123) 456-7890
+               <PiPhoneLight size={20} className="text-primary" />  (123) 456-7890
               </li>
               <li className="flex gap-1 sunflower text-secondary text-base font-light">
-                <AiOutlineMail size={20}/> info@havenplanner.com
+                <AiOutlineMail size={20} className="text-primary" /> info@havenplanner.com
               </li>
               <li className="flex gap-1 sunflower text-secondary text-base font-light">
                 {" "}
-               <CiLocationOn size={20}/> 2464 Royal Ln. Mesa, New Jersey 45463
+               <CiLocationOn size={20} className="text-primary" /> 2464 Royal Ln. Mesa, New Jersey 45463
               </li>
             </ul>
           </div>
