@@ -27,17 +27,17 @@ const PortfolioPage = () => {
             <Image
               src={PortfolioImage1}
               alt="img"
-              className="xs:h-[300px] xs:w-[220px]"
+              className="xs:h-[330px] xs:w-[220px]"
             />
             <Image
               src={PortfolioImage2}
               alt="img"
-              className="xs:h-[300px] xs:w-[220px]"
+              className="xs:h-[330px] xs:w-[220px]"
             />
             <Image
               src={PortfolioImage3}
               alt="img"
-              className="xs:h-[300px] xs:w-[220px]"
+              className="xs:h-[330px] xs:w-[220px]"
             />
               
           </div>
