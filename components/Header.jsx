@@ -15,8 +15,14 @@ const Header = () => {
                  />
         </div>
         <div className="tabs w-auto h-auto flex justify-center items-center ">
-              <ul className="flex justify-center items-center lg:gap-11 w-auto h-auto">
-                <li><Link href="/">Home</Link></li>
+              <ul className="flex justify-center items-center lg:gap-11 w-auto h-auto sunflower text-secondary pr-10">
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Home</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">About</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Services</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Events</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Portfolio</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Blog</Link></li>
+                <li><Link href="/" className="hover:text-primary focus:text-primary text-base hover:font-semibold focus-font-semibold active:font-semibold active:text-primary">Contact Us</Link></li>
                 </ul>  
         </div>
       </div>
