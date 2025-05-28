@@ -13,7 +13,7 @@ const HeroPage = () => {
         <div className="header absolute  top-12 left-0 w-full h-[80px] flex justify-center items-center">
                 <Header/>
         </div>
-        <div className="absolute w-full h-[400px] -bottom-20 right-20 flex justify-end items-center">
+        <div className="absolute w-full h-[400px] -bottom-20 right-20 flex justify-end items-center z-30">
                 <PlanningCard/>
         </div>
       </div>
