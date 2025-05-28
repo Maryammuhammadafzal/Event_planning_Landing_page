@@ -46,6 +46,8 @@
 
 
 :root {
+   --font-trochut: 'Trochut', sans-serif;
+  --font-sunflower: 'Sunflower', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -123,6 +125,13 @@
   }
 }
 
+.trochut {
+  font-family: var(--font-trochut);
+}
+
+.sunflower {
+  font-family: var(--font-sunflower);
+}
 body{
   font-family: "Trochut", sans-serif;
   background-color: white;

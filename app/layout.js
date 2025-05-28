@@ -1,6 +1,18 @@
-// import { Geist, Geist_Mono } from "next/font/google";
-import Footer from "@/components/Footer";
 import "./globals.css";
+import { Trochut, Sunflower } from 'next/font/google'
+
+const trochut = Trochut({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-trochut',
+})
+
+const sunflower = Sunflower({
+  subsets: ['latin'],
+  weight: ['300', '500', '700'],
+  variable: '--font-sunflower',
+})
+import Footer from "@/components/Footer";
 import HeroPage from "./Hero/Page";
 
 export const metadata = {
@@ -10,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${trochut.variable} ${sunflower.variable}`}>
       <body
       >
       <HeroPage/>

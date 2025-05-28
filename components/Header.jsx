@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../public/logo.png"
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header className="w-[85%] bg-white rounded-full flex justify-center items-center h-[80px]">
@@ -12,7 +14,11 @@ const Header = () => {
                  className="min-w-[130px]"
                  />
         </div>
-        <div className="tabs w-auto h-auto flex justify-center items-center "></div>
+        <div className="tabs w-auto h-auto flex justify-center items-center ">
+              <ul className="flex justify-center items-center lg:gap-11 w-auto h-auto">
+                <li><Link href="/">Home</Link></li>
+                </ul>  
+        </div>
       </div>
     </header>
   );
