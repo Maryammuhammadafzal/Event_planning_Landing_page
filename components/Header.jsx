@@ -1,11 +1,21 @@
-import React from 'react'
-
+import Image from "next/image";
+import React from "react";
+import Logo from "../public/logo.png"
 const Header = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <header className="w-[85%] bg-white rounded-full flex justify-center items-center h-[80px]">
+      <div className="w-full h-auto flex items-center justify-between lg:px-20">
+        <div className="logo w-auto h-auto">
+                <Image 
+                 src={Logo}
+                 alt="Logo"
+                 className="min-w-[130px]"
+                 />
+        </div>
+        <div className="tabs w-auto h-auto flex justify-center items-center "></div>
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

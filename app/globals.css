@@ -128,7 +128,7 @@ body{
   background-color: white;
   height: 100vh;
   margin: 0;
-  background: radial-gradient(#eae8e8 2px ,transparent 0);
+  background: radial-gradient(#dbdada 2px ,transparent 0);
   background-size: 23px 23px;
   background-position: center;
 }
