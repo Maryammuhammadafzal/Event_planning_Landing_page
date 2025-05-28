@@ -4,7 +4,7 @@ import TestimonialImage from "../../public/testimonial-image.jpg";
 import TestimonialCard from "@/components/TestimonialCard";
 const TestimonialPage = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center">
+    <div className="w-full h-auto flex flex-col justify-center items-center">
       <div
         className="relative w-full h-[500px] bg-left-top sm:bg-left-bottom md:bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${TestimonialImage.src})` }}

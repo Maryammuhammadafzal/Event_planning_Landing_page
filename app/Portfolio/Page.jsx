@@ -22,7 +22,7 @@ const PortfolioPage = () => {
             <Button className="shadow drop-shadow-xs">Meet Our Team</Button>
           </div>
         </div>
-        <div className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center">
+        <div className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center overflow-hidden">
           <div className="flex xs:flex-row flex-col gap-3">
             <Image
               src={PortfolioImage1}
