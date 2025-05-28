@@ -1,5 +1,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "@/components/Footer";
 import "./globals.css";
+import HeroPage from "./Hero/Page";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-      <Hero/>
+      <HeroPage/>
       <div className="main">
         {children}
       </div>
