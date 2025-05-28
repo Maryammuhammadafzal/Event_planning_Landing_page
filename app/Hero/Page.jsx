@@ -2,9 +2,10 @@ import React from "react";
 import HeroImage from "../../public/hero-image.jpg";
 import Header from "@/components/Header";
 import PlanningCard from "@/components/PlanningCard";
+import Marquee from "@/components/Marquee";
 const HeroPage = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center overflow-x-hidden">
+    <div className="w-full h-screen flex flex-col gap-7 justify-center items-center overflow-x-hidden">
       <div
         className="relative w-full h-screen bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${HeroImage.src})` }}
@@ -16,6 +17,9 @@ const HeroPage = () => {
                 <PlanningCard/>
         </div>
       </div>
+        <div className="marquee-line w-full h-auto">
+                <Marquee/>
+        </div>
     </div>
   );
 };

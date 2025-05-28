@@ -135,6 +135,9 @@
 .card-bg {
   background-color: #D89F5D;
 }
+.shadow {
+  box-shadow: 5px 6px var(--primary);
+}
 body{
   font-family: "Trochut", sans-serif;
   background-color: white;
