@@ -13,7 +13,7 @@ const PortfolioSlider = ({ portfolio_data }) => {
   console.log(portfolio_data);
 
   return (
-    <Carousel className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center overflow-hidden">
+    <Carousel className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center">
       <CarouselContent
         CarouselContent
         className="flex xs:flex-row flex-col gap-3"
@@ -31,10 +31,12 @@ const PortfolioSlider = ({ portfolio_data }) => {
           ))} */}
         {portfolio_data.map(({ image }, i) =>
           image ? (
-            <CarouselItem key={index} className="pl-1 basis-[230px]">
+            <CarouselItem key={i} className="pl-1 basis-[230px]">
               <Image
                 src={image}
                 alt="img"
+                width={300}
+                height={300}
                 className="xs:h-[300px] xs:w-[230px]"
               />
             </CarouselItem>
