@@ -2,8 +2,33 @@ import Heading from "@/components/Heading";
 import PortfolioSlider from "@/components/Portfolio-Slider";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import PortfolioImage1 from "../../public/port-image-1.jpg"
+import PortfolioImage2 from "../../public/port-image-2.jpg"
+import PortfolioImage3 from "../../public/port-image-3.jpg"
 
 const PortfolioPage = () => {
+  let portfolio_data = [
+    {
+      image: PortfolioImage1.src
+    },
+    {
+      image: PortfolioImage2.src
+    },
+    {
+      image: PortfolioImage3.src
+    },
+    {
+      image: PortfolioImage1.src
+    },
+    {
+      image: PortfolioImage2.src
+    },
+    {
+      image: PortfolioImage3.src
+    },
+  ]
+  console.log(portfolio_data);
+  
   return (
     <div className="w-full h-auto my-38 flex justify-center items-center">
       <div className="xl:w-[85%] lg:w-[95%] lg:px-0 px-3 h-auto flex lg:flex-row flex-col justify-center items-center gap-12">
@@ -19,7 +44,7 @@ const PortfolioPage = () => {
             <Button className="shadow drop-shadow-xs">Meet Our Team</Button>
           </div>
         </div>
-      <PortfolioSlider/>
+      <PortfolioSlider portfolio_data={portfolio_data}/>
       </div>
     </div>
   );

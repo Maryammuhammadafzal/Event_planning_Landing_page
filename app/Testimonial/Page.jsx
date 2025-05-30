@@ -2,6 +2,7 @@
 import React from "react";
 import TestimonialImage from "../../public/testimonial-image.jpg";
 import TestimonialCard from "@/components/TestimonialCard";
+import TestmonialSlider from "@/components/Testmonial-Slider";
 const TestimonialPage = () => {
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center">
@@ -10,7 +11,7 @@ const TestimonialPage = () => {
         style={{ backgroundImage: `url(${TestimonialImage.src})` }}
       >
         <div className="absolute w-full h-[400px] bottom-0 md:-bottom-20 md:right-20 flex justify-center md:justify-end items-center z-30">
-          <TestimonialCard />
+          <TestmonialSlider />
         </div>
       </div>
     </div>

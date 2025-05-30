@@ -1,23 +1,23 @@
 'use client'
 import React from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
-import PortfolioImage1 from "../public/port-image-1.jpg"
-import PortfolioImage2 from "../public/port-image-2.jpg"
-import PortfolioImage3 from "../public/port-image-3.jpg"
 
-const PortfolioSlider = () => {
+
+const PortfolioSlider = ({portfolio_data}) => {
   return (
     <Carousel className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center overflow-hidden">
       <CarouselContent CarouselContent className="flex xs:flex-row flex-col gap-3">
-          <CarouselItem className="pl-1 basis-[230px]">
+           {portfolio_data && portfolio_data.map((image, index)=> (
+          <CarouselItem key={index} className="pl-1 basis-[230px]">
             <Image
-              src={PortfolioImage1}
+              src={image}
               alt="img"
               className="xs:h-[300px] xs:w-[230px]"
             />
           </CarouselItem>
-          <CarouselItem className="pl-1 basis-[230px]">
+           ))}
+          {/* <CarouselItem className="pl-1 basis-[230px]">
             {" "}
             <Image
               src={PortfolioImage2}
@@ -55,7 +55,7 @@ const PortfolioSlider = () => {
               alt="img"
               className="xs:h-[300px] xs:w-[230px]"
             />
-          </CarouselItem>
+          </CarouselItem> */}
         </CarouselContent>
           <CarouselPrevious />
       <CarouselNext />
