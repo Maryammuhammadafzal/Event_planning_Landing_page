@@ -15,7 +15,6 @@ const Slider = ({ slides }) => {
   ]);
   return (
     <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
-      {/* <Slider {...settings}> */}
       <Carousel
         plugins={[
           Autoplay({
@@ -46,7 +45,6 @@ const Slider = ({ slides }) => {
           ))}
         </CarouselContent>
       </Carousel>
-      {/* </Slider> */}
       <div className="md:w-[30%] sm:w-[50%] w-[70%] h-auto flex justify-center items-center">
         <Progress value={20} />
       </div>

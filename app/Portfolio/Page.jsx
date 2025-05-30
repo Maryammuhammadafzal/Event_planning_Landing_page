@@ -22,26 +22,7 @@ const PortfolioPage = () => {
             <Button className="shadow drop-shadow-xs">Meet Our Team</Button>
           </div>
         </div>
-        <div className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center overflow-hidden">
-          <div className="flex xs:flex-row flex-col gap-3">
-            <Image
-              src={PortfolioImage1}
-              alt="img"
-              className="xs:h-[330px] xs:w-[220px]"
-            />
-            <Image
-              src={PortfolioImage2}
-              alt="img"
-              className="xs:h-[330px] xs:w-[220px]"
-            />
-            <Image
-              src={PortfolioImage3}
-              alt="img"
-              className="xs:h-[330px] xs:w-[220px]"
-            />
-              
-          </div>
-        </div>
+      
       </div>
     </div>
   );
