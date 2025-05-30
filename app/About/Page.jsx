@@ -5,6 +5,7 @@ import aboutImage1 from "../../public/card-image-4.jpg";
 import aboutImage2 from "../../public/about-image-2.jpg";
 import aboutImage3 from "../../public/about-image-3.jpg";
 import { Button } from "@/components/ui/button";
+
 const AboutPage = () => {
     
   return (
