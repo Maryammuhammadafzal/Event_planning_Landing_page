@@ -1,11 +1,20 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Logo2 from "../public/logo-white.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const PlanningCard = () => {
+    useEffect(()=> {
+    Aos.init({
+duration : 1000,
+once : true,
+    })
+  })
   return (
-    <div className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
+    <div data-aos="fade-left" duration='1000'  className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
       <div className="logo w-auto h-auto">
         <Image src={Logo2} alt="Logo" className="min-w-[130px]" />
       </div>

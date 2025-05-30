@@ -6,6 +6,7 @@ import aboutImage2 from "../../public/about-image-2.jpg";
 import aboutImage3 from "../../public/about-image-3.jpg";
 import { Button } from "@/components/ui/button";
 const AboutPage = () => {
+    
   return (
     <div className="w-full h-auto my-38 flex justify-center items-center">
       <div className="xl:w-[85%] lg:w-[95%] lg:px-0 px-3 h-auto flex lg:flex-row flex-col justify-center items-center gap-12">

@@ -3,7 +3,9 @@ import HeroImage from "../../public/hero-image.jpg";
 import Header from "@/components/Header";
 import PlanningCard from "@/components/PlanningCard";
 import Marquee from "@/components/Marquee";
+import Aos from "aos";
 const HeroPage = () => {
+
   return (
     <div className="w-full h-screen flex flex-col gap-7 justify-center items-center overflow-hidden md:mb-16 sm:mb-12 mb-6">
       <div
