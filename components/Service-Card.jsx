@@ -1,12 +1,14 @@
 'use client'
 import Aos from 'aos'
-import React from 'react'
+import React, { useEffect } from 'react'
 import 'aos/dist/aos.css'
 const ServiceCard = ({service_data}) => {
-        Aos.init({
+       useEffect(()=>{
+         Aos.init({
                 duration: 1000,
                 once: true,
         })
+       }, [])
   return (
     <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
           <div className="slide-card w-full h-auto flex gap-3 flex-wrap justify-center items-center ">

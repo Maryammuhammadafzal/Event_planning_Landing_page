@@ -1,23 +1,47 @@
-'use client'
+"use client";
 import React from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 
+const PortfolioSlider = ({ portfolio_data }) => {
+  console.log(portfolio_data);
 
-const PortfolioSlider = ({portfolio_data}) => {
   return (
     <Carousel className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center overflow-hidden">
-      <CarouselContent CarouselContent className="flex xs:flex-row flex-col gap-3">
-           {portfolio_data && portfolio_data.map((image, index)=> (
-          <CarouselItem key={index} className="pl-1 basis-[230px]">
-            <Image
-              src={image.src}
-              alt="img"
-              className="xs:h-[300px] xs:w-[230px]"
-            />
-          </CarouselItem>
-           ))}
-          {/* <CarouselItem className="pl-1 basis-[230px]">
+      <CarouselContent
+        CarouselContent
+        className="flex xs:flex-row flex-col gap-3"
+      >
+        {/* {portfolio_data &&
+          portfolio_data.map((image, index) => (
+            <CarouselItem key={index} className="pl-1 basis-[230px]">
+              {console.log(image)}
+              <Image
+                src={image}
+                alt="img"
+                className="xs:h-[300px] xs:w-[230px]"
+              />
+            </CarouselItem>
+          ))} */}
+        {portfolio_data.map(({ image }, i) =>
+          image ? (
+            <CarouselItem key={index} className="pl-1 basis-[230px]">
+              <Image
+                src={image}
+                alt="img"
+                className="xs:h-[300px] xs:w-[230px]"
+              />
+            </CarouselItem>
+          ) : null
+        )}
+
+        {/* <CarouselItem className="pl-1 basis-[230px]">
             {" "}
             <Image
               src={PortfolioImage2}
@@ -56,8 +80,8 @@ const PortfolioSlider = ({portfolio_data}) => {
               className="xs:h-[300px] xs:w-[230px]"
             />
           </CarouselItem> */}
-        </CarouselContent>
-          <CarouselPrevious />
+      </CarouselContent>
+      <CarouselPrevious />
       <CarouselNext />
       {/* <div className="flex xs:flex-row flex-col gap-3">
         <Image

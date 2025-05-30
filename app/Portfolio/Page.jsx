@@ -44,7 +44,14 @@ const PortfolioPage = () => {
             <Button className="shadow drop-shadow-xs">Meet Our Team</Button>
           </div>
         </div>
-      <PortfolioSlider portfolio_data={portfolio_data}/>
+     const PortfolioPage = () => {
+  let portfolio_data = [
+    {
+      image: PortfolioImage1.src
+    },
+    {
+      image: PortfolioImage2.src
+    },
       </div>
     </div>
   );
