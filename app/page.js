@@ -7,7 +7,7 @@ import ContactPage from "./Contact/Page";
 
 export default function Home() {
   return (
-   <div>
+   <div className="w-full overflow-hidden">
     <FeaturesPage/>
     <AboutPage/>
     <ServicesPage/>

@@ -5,10 +5,10 @@ import { Button } from "./ui/button";
 import Logo2 from "../public/logo-white.png";
 const TestmonialSlider = () => {
   return (
-    <Carousel className="w-[650px] flex justify-center items-center gap-6">
-      <CarouselContent className="w-[600px] flex gap-6">
+    <Carousel className="w-[560px]">
+      <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="sm:w-[560px] h-[400px] w-[97%] ml-5">
+          <CarouselItem key={index} className="sm:basis-[560px] h-[400px] w-[97%] ">
             <div  className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
               <div className="logo w-auto h-auto">
                 <Image src={Logo2} alt="Logo" className="min-w-[130px]" />

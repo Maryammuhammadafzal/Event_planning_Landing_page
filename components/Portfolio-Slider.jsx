@@ -11,7 +11,7 @@ const PortfolioSlider = ({portfolio_data}) => {
            {portfolio_data && portfolio_data.map((image, index)=> (
           <CarouselItem key={index} className="pl-1 basis-[230px]">
             <Image
-              src={image}
+              src={image.src}
               alt="img"
               className="xs:h-[300px] xs:w-[230px]"
             />
