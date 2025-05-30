@@ -1,9 +1,6 @@
 import Heading from "@/components/Heading";
+import PortfolioSlider from "@/components/Portfolio-Slider";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import PortfolioImage1 from "../../public/port-image-1.jpg"
-import PortfolioImage2 from "../../public/port-image-2.jpg"
-import PortfolioImage3 from "../../public/port-image-3.jpg"
 import React from "react";
 
 const PortfolioPage = () => {
@@ -22,7 +19,7 @@ const PortfolioPage = () => {
             <Button className="shadow drop-shadow-xs">Meet Our Team</Button>
           </div>
         </div>
-      
+      <PortfolioSlider/>
       </div>
     </div>
   );
