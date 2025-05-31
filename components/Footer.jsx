@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </footer>
         <div className="w-full text-center h-auto justify-center items-center text-secondary text-sm mb-10">
-          © 2025 Haven Planner. All Rights Reserved by <span className="text-primary">Rootletsolutions.com</span>
+          © 2025 Haven Planner. All Rights Reserved by <a href="Rootletsolutions.com" className="text-primary">Rootletsolutions.com</a>
         </div>
       </div>
     </div>
