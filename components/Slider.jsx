@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Autoplay from "embla-carousel-autoplay";
 import { Progress } from "@/components/ui/progress";
@@ -9,12 +9,20 @@ import {
 } from "@/components/ui/carousel";
 import useEmblaCarousel from "embla-carousel-react";
 
-const Slider = ({ slides }) => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3000, stopOnInteraction: false }),
-  ]);
+const Slider = ({ slides , setApi , current , count}) => {
+ const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  React.useEffect(() => {
+    if (emblaApi) {
+      setApi?.(emblaApi);
+    }
+  }, [emblaApi, setApi]);
+
+  const progress = (count > 0) ? ((current + 1) / count) * 100 : 0;
+  console.log(progress);
+  
   return (
-    <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
+    <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center" ref={emblaRef}>
       <Carousel
         plugins={[
           Autoplay({
@@ -22,7 +30,7 @@ const Slider = ({ slides }) => {
           }),
         ]}
         className="slide-card w-full h-auto flex justify-center items-center"
-      >
+        >
         <CarouselContent className="-ml-4 flex">
           {slides.map(({ feature_image, feature_name }, index) => (
             <CarouselItem
@@ -45,9 +53,7 @@ const Slider = ({ slides }) => {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="md:w-[30%] sm:w-[50%] w-[70%] h-auto flex justify-center items-center">
-        <Progress value={20} />
-      </div>
+     
     </div>
   );
 };
