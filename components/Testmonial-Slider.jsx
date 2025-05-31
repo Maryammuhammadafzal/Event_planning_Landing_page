@@ -1,15 +1,38 @@
-import React from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Logo2 from "../public/logo-white.png";
+
+
 const TestmonialSlider = () => {
+
+  const countRef = useRef(null)
+const [currentIndex, setCurrentIndex] = useState(0);
+console.log(countRef);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prev) => prev + 1);
+  //   }, 500); // slide duration in ms
+  //   return () => clearInterval(interval);
+  // }, [slideCount])
   return (
     <Carousel className="w-[560px]">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="sm:basis-[560px] h-[400px] w-[97%] ">
-            <div  className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
+          <CarouselItem
+            key={index}
+            className="sm:basis-[560px] h-[400px] w-[97%] "
+          >
+            <div className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
               <div className="logo w-auto h-auto">
                 <Image src={Logo2} alt="Logo" className="min-w-[130px]" />
               </div>
@@ -24,7 +47,9 @@ const TestmonialSlider = () => {
                 <p className="text-lg">Jane & Mike</p>
               </div>
               <div className="button flex justify-center items-center">
-                <Button className="shadow drop-shadow-xs">Next</Button>
+                <Button onClick={(prev)=> prev + 1} className="shadow drop-shadow-xs">
+                  Next
+                </Button>
               </div>
             </div>
           </CarouselItem>
