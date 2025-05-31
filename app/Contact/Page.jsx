@@ -18,24 +18,24 @@ const ContactPage = () => {
         <div className=" w-full h-auto flex flex-col gap-3 justify-center items-center">
           <div className="2xl:w-[50%] xl:w-[60%] lg:w-[80%] md:w-[90%] w-full h-auto flex flex-wrap gap-16 justify-center items-center">
             <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
-              <Label htmlFor="email">Email</Label>
+              <Label className="text-primary text-base" htmlFor="name">Name</Label>
+              <Input type="text" id="name" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+            </div>
+            <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
+              <Label className="text-primary text-base" htmlFor="email">Email</Label>
               <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
             </div>
             <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+              <Label className="text-primary text-base" htmlFor="number">Phone Number</Label>
+              <Input type="number" id="number" className="bg-neutral-100 h-[40px] border-none rounded-none" />
             </div>
             <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+              <Label className="text-primary text-base" htmlFor="event">Event Type</Label>
+              <Input type="tetx" id="event" className="bg-neutral-100 h-[40px] border-none rounded-none" />
             </div>
             <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
-            </div>
-            <div className="grid xs:w-[200px] w-[90%] items-center gap-1.5 sunflower">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" className="bg-neutral-100 h-[40px] border-none rounded-none" />
+              <Label className="text-primary text-base" htmlFor="date">Date</Label>
+              <Input type="text" id="date" className="bg-neutral-100 h-[40px] border-none rounded-none" />
             </div>
             <div className="grid xs:w-[200px] w-[90%] items-center  sunflower">
              <Button className="shadow drop-shadow-xs">Let's Start Planning</Button>
