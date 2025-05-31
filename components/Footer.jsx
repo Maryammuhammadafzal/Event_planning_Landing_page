@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="w-full h-auto flex justify-center items-center">
       <div className="xl:w-[60%] flex flex-col justify-center items-center gap-6 w-full lg:w-[80%] md:w-full md:px-0 px-3">
-        <footer className="w-full flex h-auto gap-40">
+        <footer className="w-full flex flex-wrap px-3 h-auto gap-40">
           <div className="w-auto h-auto flex flex-col gap-4">
             <div className="logo w-auto h-auto">
               <Image
