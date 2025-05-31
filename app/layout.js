@@ -23,10 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${trochut.variable} ${sunflower.variable}`}>
-      <body
+      <body className="w-full"
       >
       <HeroPage/>
-      <div className="main">
+      <div>
         {children}
       </div>
       <Footer/>

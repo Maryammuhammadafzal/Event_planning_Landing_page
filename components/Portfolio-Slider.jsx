@@ -13,22 +13,10 @@ const PortfolioSlider = ({ portfolio_data }) => {
   console.log(portfolio_data);
 
   return (
-    <Carousel className="gallery lg:w-[50%] sm:w-[80%] flex lg:justify-end items-center">
+    <Carousel className="gallery lg:w-[600px] sm:w-[500px] xs:w-[500px] w-[300px] flex lg:justify-end items-center overflow-hidden">
       <CarouselContent
-        CarouselContent
-        className="flex xs:flex-row flex-col gap-3"
+        className="flex flex-row  gap-3 "
       >
-        {/* {portfolio_data &&
-          portfolio_data.map((image, index) => (
-            <CarouselItem key={index} className="pl-1 basis-[230px]">
-              {console.log(image)}
-              <Image
-                src={image}
-                alt="img"
-                className="xs:h-[300px] xs:w-[230px]"
-              />
-            </CarouselItem>
-          ))} */}
         {portfolio_data.map(({ image }, i) =>
           image ? (
             <CarouselItem key={i} className="pl-1 basis-[230px]">
@@ -37,13 +25,20 @@ const PortfolioSlider = ({ portfolio_data }) => {
                 alt="img"
                 width={300}
                 height={300}
-                className="xs:h-[300px] xs:w-[230px]"
+                className="h-[300px] w-[230px]"
               />
             </CarouselItem>
           ) : null
         )}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
+};
 
-        {/* <CarouselItem className="pl-1 basis-[230px]">
+export default PortfolioSlider;
+{/* <CarouselItem className="pl-1 basis-[230px]">
             {" "}
             <Image
               src={PortfolioImage2}
@@ -82,10 +77,9 @@ const PortfolioSlider = ({ portfolio_data }) => {
               className="xs:h-[300px] xs:w-[230px]"
             />
           </CarouselItem> */}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-      {/* <div className="flex xs:flex-row flex-col gap-3">
+
+          
+  {/* <div className="flex xs:flex-row flex-col gap-3">
         <Image
           src={PortfolioImage1}
           alt="img"
@@ -102,8 +96,15 @@ const PortfolioSlider = ({ portfolio_data }) => {
           className="xs:h-[300px] xs:w-[230px]"
         />
       </div> */}
-    </Carousel>
-  );
-};
 
-export default PortfolioSlider;
+       {/* {portfolio_data &&
+          portfolio_data.map((image, index) => (
+            <CarouselItem key={index} className="pl-1 basis-[230px]">
+              {console.log(image)}
+              <Image
+                src={image}
+                alt="img"
+                className="xs:h-[300px] xs:w-[230px]"
+              />
+            </CarouselItem>
+          ))} */}
