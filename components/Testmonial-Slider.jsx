@@ -25,14 +25,14 @@ console.log(countRef);
   //   return () => clearInterval(interval);
   // }, [slideCount])
   return (
-    <Carousel className="w-[560px]">
+    <Carousel className="sm:w-[560px] w-[300px]">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className="sm:basis-[560px] h-[400px] w-[97%] "
+            className="sm:basis-[560px] h-[400px] basis-[300px] "
           >
-            <div className="sm:w-[560px] h-[400px] w-[97%] flex flex-col justify-center items-center gap-5 card-bg">
+            <div className="sm:w-[560px] h-[400px] w-[280px] flex flex-col justify-center items-center gap-5 card-bg">
               <div className="logo w-auto h-auto">
                 <Image src={Logo2} alt="Logo" className="min-w-[130px]" />
               </div>
@@ -55,8 +55,8 @@ console.log(countRef);
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="sm:block hidden" />
+      <CarouselNext className="sm:block hidden" />
     </Carousel>
   );
 };
