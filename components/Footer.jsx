@@ -11,7 +11,7 @@ import { CiFacebook } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="w-full h-auto flex justify-center items-center">
-      <div className="xl:w-[60%] flex flex-col justify-center items-center gap-6 w-full lg:w-[80%] md:w-full md:px-0 px-3">
+      <div className="xl:w-[60%] flex flex-col justify-center items-center gap-10 w-full lg:w-[80%] md:w-full md:px-0 px-3">
         <footer className="w-full flex flex-wrap px-3 h-auto gap-40">
           <div className="w-auto h-auto flex flex-col gap-4">
             <div className="logo w-auto h-auto">
@@ -72,7 +72,7 @@ const Footer = () => {
             </ul>
           </div>
         </footer>
-        <div className="w-full h-auto justify-center items-center text-secondary text-sm">
+        <div className="w-full text-center h-auto justify-center items-center text-secondary text-sm mb-10">
           © 2025 Haven Planner. All Rights Reserved by <span className="text-primary">Rootletsolutions.com</span>
         </div>
       </div>
